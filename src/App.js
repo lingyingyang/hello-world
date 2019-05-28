@@ -12,11 +12,18 @@ import HoverCounter from './components/hoc/HoverCounter';
 import ClickCounterTwo from './components/render-props/ClickCounterTwo';
 import Counter from './components/render-props/Counter';
 import HoverCounterTwo from './components/render-props/HoverCounterTwo';
+import { UserProvider } from './components/context/UserControl';
+import ComponentC from './components/context/ComponentC'
 
 function App() {
   return (
     <div className="App">
-      <h2>Render Props</h2>
+      <h2>Context</h2>
+      <UserProvider value="Philip">
+        <ComponentC></ComponentC>
+      </UserProvider>
+
+      {/* <h2>Render Props</h2>
       <Counter
         render={(count, incrementCount) => (
           <ClickCounterTwo count={count} incrementCount={incrementCount} />
@@ -25,7 +32,7 @@ function App() {
       <Counter
         render={(count, incrementCount) => (
           <HoverCounterTwo count={count} incrementCount={incrementCount} />
-        )} />
+        )} /> */}
 
 
       {/* <h2>HOC - Higher Order components</h2>
