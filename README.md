@@ -3,7 +3,11 @@
 1. run `npm create-react-app`
 2. run `npm install`
 3. run `npm start`
+
 ## Run Project
 1. clone the respistory
 2. run `npm install`
 3. run `npm start`
+
+## Install axios for http
+run `npm install axios`

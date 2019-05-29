@@ -14,14 +14,20 @@ import Counter from './components/render-props/Counter';
 import HoverCounterTwo from './components/render-props/HoverCounterTwo';
 import { UserProvider } from './components/context/UserControl';
 import ComponentC from './components/context/ComponentC'
+import PostList from './components/http/PostList';
+import PostForm from './components/http/PostForm';
 
 function App() {
   return (
     <div className="App">
-      <h2>Context</h2>
+      <h1>Http</h1>
+      <PostForm />
+      <PostList />
+
+      {/* <h2>Context</h2>
       <UserProvider value="Philip">
         <ComponentC></ComponentC>
-      </UserProvider>
+      </UserProvider> */}
 
       {/* <h2>Render Props</h2>
       <Counter
