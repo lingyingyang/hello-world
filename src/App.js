@@ -16,20 +16,29 @@ import { UserProvider } from './components/context/UserControl';
 import ComponentC from './components/context/ComponentC'
 import PostList from './components/http/PostList';
 import PostForm from './components/http/PostForm';
+import HookCounter from './components/hook/HookCounter';
+import HookCounterThree from './components/hook/HookCounterThree';
+import HookCounterFour from './components/hook/HookCounterFour';
 
 function App() {
   return (
     <div className="App">
+
+      <h1>Hook</h1>
+      <HookCounter></HookCounter>
+      <HookCounterThree />
+      <HookCounterFour />
+
       <h1>Http</h1>
       <PostForm />
       <PostList />
 
-      {/* <h2>Context</h2>
+      <h1>Context</h1>
       <UserProvider value="Philip">
         <ComponentC></ComponentC>
-      </UserProvider> */}
+      </UserProvider>
 
-      {/* <h2>Render Props</h2>
+      <h1>Render Props</h1>
       <Counter
         render={(count, incrementCount) => (
           <ClickCounterTwo count={count} incrementCount={incrementCount} />
@@ -38,16 +47,16 @@ function App() {
       <Counter
         render={(count, incrementCount) => (
           <HoverCounterTwo count={count} incrementCount={incrementCount} />
-        )} /> */}
+        )} />
 
-
-      {/* <h2>HOC - Higher Order components</h2>
+      {/* <h1>HOC - Higher Order components</h1>
       <ClickCounter />
       <HoverCounter /> */}
 
-      {/* <ParentComponent /> */}
-      {/* <EventBind /> */}
-      {/* <FunctionClick />
+      {/* <h1>Foundamental Concepts</h1>
+      <ParentComponent />
+      <EventBind />
+      <FunctionClick />
       <ClassClick />
       <Counter></Counter>
       <Message />
