@@ -19,12 +19,16 @@ import PostForm from './components/http/PostForm';
 import HookCounter from './components/hook/HookCounter';
 import HookCounterThree from './components/hook/HookCounterThree';
 import HookCounterFour from './components/hook/HookCounterFour';
+import HookClickOne from './components/hook/useEffect/HookClickOne';
 
 function App() {
   return (
     <div className="App">
 
-      <h1>Hook</h1>
+      <h1>Hook - useEffect</h1>
+      <HookClickOne />
+
+      <h1>Hook - useState</h1>
       <HookCounter></HookCounter>
       <HookCounterThree />
       <HookCounterFour />
